@@ -1,3 +1,20 @@
+# Created by .ignore support plugin (hsz.mobi)
+dist
+
+# Mac os
+.DS_Store
+
+.nyc_output
+
+# webstorm
+.idea
+
+docs/typedocs
+
+# vscode
+.vscode
+
+### Node template
 # Logs
 logs
 *.log
@@ -59,3 +76,9 @@ typings/
 
 # next.js build output
 .next
+
+.idea/encodings.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/workspace.xml
+.idea/xmind-sdk.iml

@@ -1,0 +1,25 @@
+{
+  "name": "xmind-model",
+  "version": "1.0.3",
+  "description": "The core model of snowbrush",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "backbone": "^1.4.0",
+    "underscore": "^1.9.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.xmind.cn/daniels/xmind-model.git"
+  },
+  "keywords": [
+    "xmind-model",
+    "xmindmodel",
+    "model",
+    "xmind-core"
+  ],
+  "author": "daniels",
+  "license": "MIT"
+}
