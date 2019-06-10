@@ -77,7 +77,7 @@ declare namespace core {
      * @param {String | Array<String>} type - allow use single type or an array of types
      * @return {Array<Child>}
      */
-    getChildrenByType<Child>(type: string | Array<string>): Array<Child>;
+    getChildrenByType(type: string | Array<string>): Array<Topic>;
 
     /**
      * @description Get summaries
