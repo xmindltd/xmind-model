@@ -204,7 +204,7 @@ declare namespace core {
      * @param {Object} [options]
      * @return {void}
      */
-    createComponent<T>(data: T, options?: Object): Component;
+    createComponent<T, R extends Topic>(data: T, options?: Object): R;
 
     /**
      * @description Generate an unique componentId
@@ -215,9 +215,9 @@ declare namespace core {
     /**
      * @description Find component by id
      * @param {String} id
-     * @return {Component}
+     * @return {R}
      */
-    findComponentById(id: string): Component;
+    findComponentById<R extends Topic>(id: string): R;
 
     /**
      * @description Change sheet title
