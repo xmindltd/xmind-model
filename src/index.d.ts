@@ -53,9 +53,10 @@ declare namespace core {
 
     /**
      * @description Get parent of current component
-     * @param {Component} parentModel 
+     * @param {Component} [parent]
+     * @return {R}
      */
-    parent(parentModel: Component): Component;
+    parent<R extends Topic>(parent?: Component): R;
 
     /**
      * @description Check current component's relationships
@@ -204,7 +205,7 @@ declare namespace core {
      * @param {Object} [options]
      * @return {void}
      */
-    createComponent<T, R extends Topic>(data: T, options?: Object): R;
+    createComponent<T, R extends Topic, Component>(data: T, options?: Object): R;
 
     /**
      * @description Generate an unique componentId
@@ -217,7 +218,7 @@ declare namespace core {
      * @param {String} id
      * @return {R}
      */
-    findComponentById<R extends Topic>(id: string): R;
+    findComponentById<R extends Topic, Component>(id: string): R;
 
     /**
      * @description Change sheet title
