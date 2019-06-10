@@ -4,7 +4,7 @@ declare namespace core {
   /**
    * @default Base Event extends from Backbone
    */
-  export interface BaseEvent {
+  export class BaseEvent {
     /**
      * @description Listener
      */
@@ -20,7 +20,7 @@ declare namespace core {
    * @description Base Model that includes a few common methods
    * @extends BaseEvent
    */
-  export interface BaseModel extends BaseEvent {
+  export class BaseModel extends BaseEvent {
 
     toString(): string;
 
@@ -37,7 +37,7 @@ declare namespace core {
     set(key: string, value: any): void;
   }
 
-  export interface Component extends BaseModel {
+  export class Component extends BaseModel {
 
     /**
      * @description Get workbook
@@ -61,10 +61,10 @@ declare namespace core {
      * @description Check current component's relationships
      */
     isOrphan (): boolean;
-
   }
 
-  export class Topic {
+
+  export class Topic extends Component {
     /**
      * @description Get type of the topic
      * @return {String}
@@ -182,7 +182,7 @@ declare namespace core {
   /**
    * @description The Sheet class
    */
-  export class Sheet {
+  export class Sheet extends Component {
 
     /**
      * @description Get intance of Theme
@@ -250,7 +250,7 @@ declare namespace core {
 
   export type WorkbookOptions = Array<WorkbookOption>;
 
-  export class Workbook {
+  export class Workbook extends BaseModel {
     
     constructor(options: WorkbookOptions);
 
