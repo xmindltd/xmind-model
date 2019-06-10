@@ -15,6 +15,9 @@
     "type": "git",
     "url": "https://github.com/xmindltd/xmind-model.git"
   },
+  "files": [
+    "src"
+  ],
   "keywords": [
     "xmind-model",
     "xmindmodel",
