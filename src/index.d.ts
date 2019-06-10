@@ -70,7 +70,7 @@ declare namespace core {
      * @description Get type of the topic
      * @return {String}
      */
-    getType(): String;
+    getType(): string;
 
     /**
      * @description Get children by type
