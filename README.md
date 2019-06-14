@@ -1,15 +1,11 @@
-# XMind Model Package
+# XMind Core
 
-The core model of `snowbrush`
+DO NOT use this module directly!
 
-## Warning
-1. `Do not` use this module directly
-2. This module will be rewrite in `typescripts` in the future
+This project will be replaced by a `typescript` version in the future.
 
 
 ## Intro
-
-This project includes almost full features
 
 [See index.d.ts](src/index.d.ts)
 
