@@ -5,9 +5,10 @@
   "main": "src/index.js",
   "types": "src/index.d.ts",
   "scripts": {
-    "simple:test": "ts-node test/index.ts"
+    "test": "ts-node test/index.ts && mocha"
   },
   "dependencies": {
+    "ajv": "^6.10.0",
     "backbone": "^1.4.0",
     "underscore": "^1.9.1"
   },
@@ -25,5 +26,9 @@
     "xmind-core"
   ],
   "author": "daniels",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.1.4"
+  }
 }

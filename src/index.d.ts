@@ -280,6 +280,8 @@ declare namespace core {
     getSheets(): Array<Sheet>;
   }
 
+  export function validator(data: object): {status: boolean, errors: Array<object>};
+
   namespace Core {}
 }
 

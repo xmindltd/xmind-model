@@ -7,13 +7,14 @@ const sheet = wb.getSheetById('1');
 
 const topic = sheet.getRootTopic();
 
+// console.info()
+Core.validator([]);
+
 topic.addChildTopic({title: '123123', id: 'asdada-asdasdd-lkj-sdfg-dskfhsj'});
 
-console.info(wb.toString());
+// console.info(wb.toString());
 
-console.info('\n\n');
+// console.info(wb.toJSON());
 
-console.info(wb.toJSON());
-
-console.info('\n\n');
-console.info(wb.toJSON()[0].rootTopic.children);
+// console.info('\n\n');
+// console.info(wb.toJSON()[0].rootTopic.children);
