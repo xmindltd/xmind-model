@@ -1,0 +1,104 @@
+{
+  "type": "object",
+  "properties": {
+      "id": {
+          "type": "string"
+      },
+      "title": {
+          "type": "string"
+      },
+      "titleUnedited": {
+          "type": "boolean"
+      },
+      "style": {
+          "$ref": "#/definitions/style"
+      },
+      "class": {
+          "type": "string"
+      },
+      "position": {
+          "$ref": "#/definitions/position"
+      },
+      "structureClass": {
+          "type": "string"
+      },
+      "branch": {
+          "type": "string",
+          "enum": [
+              "folded"
+          ]
+      },
+      "customWidth": {
+          "type": "number"
+      },
+      "labels": {
+          "type": "string"
+      },
+      "numbering": {
+          "$ref": "#/definitions/numbering"
+      },
+      "href": {
+          "type": "string"
+      },
+      "notes": {
+          "$ref": "#/definitions/notes"
+      },
+      "image": {
+          "$ref": "#/definitions/image"
+      },
+      "children": {
+          "type": "object",
+          "properties": {
+              "attached": {
+                  "type": "array",
+                  "items": {
+                      "$ref": "#/definitions/topic"
+                  }
+              },
+              "detached": {
+                  "type": "array",
+                  "items": {
+                      "$ref": "#/definitions/topic"
+                  }
+              },
+              "summary": {
+                  "type": "array",
+                  "items": {
+                      "$ref": "#/definitions/topic"
+                  }
+              },
+              "callout":{
+                  "type": "array",
+                  "items": {
+                      "$ref": "#/definitions/topic"
+                  }
+              }
+          }
+      },
+      "markers": {
+          "type": "array",
+          "items": {
+              "$ref": "#/definitions/marker"
+          }
+      },
+      "boundaries": {
+          "type": "array",
+          "items": {
+              "$ref": "#/definitions/boundary"
+          }
+      },
+      "summaries": {
+          "type": "array",
+          "items": {
+              "$ref": "#/definitions/summary"
+          }
+      },
+      "extensions": {
+          "type": "array",
+          "items": {
+              "$ref": "#/definitions/extension"
+          }
+      }
+  },
+  "required": ["id"]
+}

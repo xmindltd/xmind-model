@@ -1,0 +1,11 @@
+{
+  "type": "object",
+  "properties": {
+      "markerId": {
+          "type": "string"
+      }
+  },
+  "required": [
+      "markerId"
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "type": "object",
+  "properties": {
+      "id": {
+          "type": "string"
+      },
+      "importantTopic": {
+          "$ref": "#/definitions/style"
+      },
+      "minorTopic": {
+          "$ref": "#/definitions/style"
+      },
+      "expiredTopic": {
+          "$ref": "#/definitions/style"
+      },
+      "centralTopic": {
+          "$ref": "#/definitions/style"
+      },
+      "boundary": {
+          "$ref": "#/definitions/style"
+      },
+      "floatingTopic": {
+          "$ref": "#/definitions/style"
+      },
+      "subTopic": {
+          "$ref": "#/definitions/style"
+      },
+      "mainTopic": {
+          "$ref": "#/definitions/style"
+      },
+      "calloutTopic": {
+          "$ref": "#/definitions/style"
+      },
+      "summaryTopic": {
+          "$ref": "#/definitions/style"
+      },
+      "relationship": {
+          "$ref": "#/definitions/style"
+      }
+  }
+}

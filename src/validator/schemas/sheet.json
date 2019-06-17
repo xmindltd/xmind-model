@@ -1,0 +1,50 @@
+{
+  "type": "object",
+  "properties": {
+      "id": {
+          "type": "string"
+      },
+      "title": {
+          "type": "string"
+      },
+      "rootTopic": {
+          "$ref": "#/definitions/topic"
+      },
+      "style": {
+          "$ref": "#/definitions/style"
+      },
+      "topicPositioning": {
+          "type": "string",
+          "enum": [
+              "free",
+              "fixed"
+          ]
+      },
+      "topicOverlapping": {
+          "type": "string",
+          "enum": [
+              "overlap",
+              "none"
+          ]
+      },
+      "theme": {
+          "$ref": "#/definitions/theme"
+      },
+      "relationships": {
+          "type": "array",
+          "items": {
+              "$ref": "#/definitions/relationship"
+          }
+      },
+      "legend": {
+          "$ref": "#/definitions/legend"
+      },
+      "settings": {
+          "$ref": "#/definitions/settings"
+      }
+  },
+  "required": [
+      "id",
+      "rootTopic"
+  ]
+}

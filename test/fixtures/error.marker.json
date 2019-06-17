@@ -1,0 +1,461 @@
+[
+  {
+      "id": "4ac4bb4e-ffd4-4c8b-a3a0-b15e9c19c747",
+      "sheetTitle": "sheet-1",
+      "rootTopic": {
+          "id": "1ae0eeaa-1080-4850-a576-44b4d1b6e0ed",
+          "title": "Computer science",
+          "style": {
+              "id": "57b2585b-9d0b-49ef-8979-d26b82672854",
+              "properties": {}
+          },
+          "children": {
+              "attached": [
+                  {
+                      "title": "Programming Language",
+                      "id": "ead7f785-143c-48c9-a4fe-e3f2fa60bd0a",
+                      "style": {
+                          "id": "e160c624-37db-4000-ab16-f4a9e6663705",
+                          "properties": {}
+                      },
+                      "children": {
+                          "attached": [
+                              {
+                                  "title": "dynamic",
+                                  "id": "49e53c72-60b0-45c4-a15f-69bee2a86438",
+                                  "style": {
+                                      "id": "6a686370-1a98-423c-9f91-43ce3b6f2f1c",
+                                      "properties": {}
+                                  },
+                                  "notes": {
+                                      "html": {
+                                          "content": {
+                                              "paragraphs": [
+                                                  {
+                                                      "spans": [
+                                                          {
+                                                              "text": "The static languages are fast more than dynamic language"
+                                                          }
+                                                      ]
+                                                  }
+                                              ]
+                                          }
+                                      },
+                                      "plain": {
+                                          "content": "The static languages are fast more than dynamic language"
+                                      },
+                                      "ops": {
+                                          "ops": [
+                                              {
+                                                  "insert": "The static languages are fast more than dynamic language"
+                                              }
+                                          ]
+                                      }
+                                  },
+                                  "children": {
+                                      "attached": [
+                                          {
+                                              "title": "Node.js",
+                                              "id": "e077af83-67a8-426b-9c2b-b73aebf5b84d",
+                                              "style": {
+                                                  "id": "024b7487-007e-4cd2-baec-a9e2f2619eab",
+                                                  "properties": {}
+                                              }
+                                          },
+                                          {
+                                              "title": "Python",
+                                              "id": "ce3db17b-819b-4ea3-98d0-361307ef5132",
+                                              "style": {
+                                                  "id": "14c80cf9-801b-4dd9-b69d-dc342f6d466c",
+                                                  "properties": {}
+                                              }
+                                          },
+                                          {
+                                              "title": "Ruby",
+                                              "id": "9a5ce7ac-bb36-4ab6-8f0a-85b296eb2c0d",
+                                              "style": {
+                                                  "id": "a731b436-73f3-449e-9633-6150fd1bff90",
+                                                  "properties": {}
+                                              }
+                                          }
+                                      ]
+                                  }
+                              },
+                              {
+                                  "title": "static",
+                                  "id": "d81b6ea1-ebd1-4ef9-84ce-d89d09f1ad73",
+                                  "style": {
+                                      "id": "58090103-3997-4cbc-b9b5-d91bd3ef1575",
+                                      "properties": {}
+                                  },
+                                  "children": {
+                                      "attached": [
+                                          {
+                                              "title": "C",
+                                              "id": "d22e1980-2d03-4afe-bb7b-98d7be416511",
+                                              "style": {
+                                                  "id": "78ebf175-63ae-4b8c-938d-167ec56c8100",
+                                                  "properties": {}
+                                              }
+                                          },
+                                          {
+                                              "title": "C++",
+                                              "id": "8c14cb56-ff74-42a2-bb1c-98dc0a908181",
+                                              "style": {
+                                                  "id": "ce982c02-e4bf-4241-955c-165638e34ebc",
+                                                  "properties": {}
+                                              }
+                                          },
+                                          {
+                                              "title": "Java",
+                                              "id": "a0fb36e5-cd8c-43fb-bb33-b516daf50e58",
+                                              "style": {
+                                                  "id": "7ceed632-1a04-4ae7-ab57-3cd7c2e6300b",
+                                                  "properties": {}
+                                              }
+                                          }
+                                      ],
+                                      "summary": [
+                                          {
+                                              "title": "Low level that is hard to learning",
+                                              "id": "7e71ce74-e446-4788-97cd-6c81d7fa851f",
+                                              "style": {
+                                                  "id": "27fb87c0-23b2-4e8f-94d7-28269ef29cee",
+                                                  "properties": {}
+                                              }
+                                          }
+                                      ]
+                                  },
+                                  "summaries": [
+                                      {
+                                          "id": "aa0cc5d7-a009-46cf-b924-570e7165602e",
+                                          "range": "(0,1)",
+                                          "topicId": "7e71ce74-e446-4788-97cd-6c81d7fa851f",
+                                          "style": {
+                                              "id": "ce845262-4fab-43f7-a138-be7a27e3b870",
+                                              "properties": {}
+                                          }
+                                      }
+                                  ]
+                              }
+                          ],
+                          "summary": [
+                              {
+                                  "title": "In popular",
+                                  "id": "5900e592-af6a-4a90-967a-e8cdae340ace",
+                                  "style": {
+                                      "id": "e1647eb6-72bf-426e-b7fb-2ef8c86fc998",
+                                      "properties": {}
+                                  }
+                              }
+                          ]
+                      },
+                      "summaries": [
+                          {
+                              "id": "9526d443-c0f8-406e-8c53-f45c06f3fe0f",
+                              "range": "(0,0)",
+                              "topicId": "5900e592-af6a-4a90-967a-e8cdae340ace",
+                              "style": {
+                                  "id": "afd30ce7-e93e-4d9a-b913-9033cb7bcb88",
+                                  "properties": {}
+                              }
+                          }
+                      ]
+                  },
+                  {
+                      "title": "Software Name",
+                      "id": "046ed7c6-fce5-4dd4-8a0d-898ed9b32d16",
+                      "style": {
+                          "id": "63b81a1e-d133-45c6-9843-cb0639677e63",
+                          "properties": {}
+                      }
+                  },
+                  {
+                      "title": "Network device",
+                      "id": "e27668f4-7ab1-4226-beb2-765fb26323ee",
+                      "style": {
+                          "id": "f55ecda4-f8dc-417c-961b-b1d6bdccd388",
+                          "properties": {}
+                      }
+                  },
+                  {
+                      "title": "Computer Brand",
+                      "id": "e21ba587-91c8-47d4-bf63-4d18c1045da7",
+                      "style": {
+                          "id": "35296bce-8949-42f5-adbf-bb51a70c48c5",
+                          "properties": {}
+                      }
+                  },
+                  {
+                      "title": "jetBrains",
+                      "id": "8d11cdfd-1ce9-4a8e-9827-83c79ed019d9",
+                      "style": {
+                          "id": "73958172-eb7f-47d6-bc34-356a62550d5b",
+                          "properties": {}
+                      },
+                      "markers": [
+                          {
+                              "groupId": "smileyMarkers",
+                              "markerId": "smiley-smile"
+                          }
+                      ],
+                      "children": {
+                          "attached": [
+                              {
+                                  "title": "WebStorm",
+                                  "id": "a4f60853-02e9-4af5-a9bd-2e2f734eed8f",
+                                  "style": {
+                                      "id": "1a938d4c-c0cd-4a1b-a134-8f5a091b2d40",
+                                      "properties": {}
+                                  }
+                              },
+                              {
+                                  "title": "Pycharm",
+                                  "id": "e685f758-5157-4091-89ae-ca4dce3d634f",
+                                  "style": {
+                                      "id": "5c6276f0-e955-431c-93b8-2d9991378d76",
+                                      "properties": {}
+                                  }
+                              },
+                              {
+                                  "title": "CLion",
+                                  "id": "c1521ac6-38b3-47df-9820-1e00eec5a6e1",
+                                  "style": {
+                                      "id": "256badc0-0de6-47b4-a179-fda0a375eebf",
+                                      "properties": {}
+                                  }
+                              },
+                              {
+                                  "title": "IntelliJ Idea",
+                                  "id": "4cc23cc8-d383-485f-9595-93933208cd90",
+                                  "style": {
+                                      "id": "736a817a-6e02-4e58-afaa-79fc78ea770e",
+                                      "properties": {}
+                                  }
+                              },
+                              {
+                                  "title": "etc.",
+                                  "id": "bbc03876-d553-48f7-a153-ddbf794b28b9",
+                                  "style": {
+                                      "id": "d44e5419-0f60-40c3-bee2-05a2fbb8d0cb",
+                                      "properties": {}
+                                  }
+                              }
+                          ]
+                      }
+                  },
+                  {
+                      "title": "Microsoft",
+                      "id": "a69fc077-7e24-4dfc-8d23-99f5f0349023",
+                      "style": {
+                          "id": "55072d0c-f3a0-4fff-b084-5808fa475519",
+                          "properties": {}
+                      },
+                      "markers": [
+                          {
+                              "groupId": "smileyMarkers",
+                              "markerId": "smiley-cry"
+                          }
+                      ],
+                      "children": {
+                          "attached": [
+                              {
+                                  "title": "vs code",
+                                  "id": "34858409-1214-4ffc-9040-4c451eb1482e",
+                                  "style": {
+                                      "id": "2456debf-18c3-4705-8521-2bafd5cfd4c4",
+                                      "properties": {}
+                                  }
+                              }
+                          ]
+                      }
+                  }
+              ],
+              "summary": [
+                  {
+                      "title": "all of the productions belongs to jetbrains",
+                      "id": "170eb70c-f75d-4145-af04-e66d807a9ee4",
+                      "style": {
+                          "id": "da8b8c4e-147f-4eee-a63a-2baba7acff7c",
+                          "properties": {}
+                      }
+                  }
+              ]
+          },
+          "markers": [
+              {
+                  "groupId": "smileyMarkers"
+              }
+          ],
+          "summaries": [
+              {
+                  "id": "02a6497a-f881-475c-acfa-bb685fc78977",
+                  "range": "(4,4)",
+                  "topicId": "170eb70c-f75d-4145-af04-e66d807a9ee4",
+                  "style": {
+                      "id": "af83e53a-6255-4a9a-83f7-b677503d40c9",
+                      "properties": {}
+                  }
+              }
+          ]
+      },
+      "style": {
+          "id": "6190fcdc-0577-4122-8141-d621053e73ad",
+          "properties": {}
+      },
+      "topicPositioning": "fixed",
+      "theme": {
+          "importantTopic": {
+              "type": "topic",
+              "properties": {
+                  "fo:font-weight": "bold",
+                  "fo:color": "#312935",
+                  "svg:fill": "#FEFF00"
+              }
+          },
+          "minorTopic": {
+              "type": "topic",
+              "properties": {
+                  "fo:font-weight": "bold",
+                  "fo:color": "#312935",
+                  "svg:fill": "#00EEFF"
+              }
+          },
+          "expiredTopic": {
+              "type": "topic",
+              "properties": {
+                  "fo:font-style": "italic",
+                  "fo:text-decoration": " line-through"
+              }
+          },
+          "centralTopic": {
+              "properties": {
+                  "shape-class": "org.xmind.topicShape.ellipserect",
+                  "svg:fill": "#D1F786",
+                  "fo:color": "#302934",
+                  "line-color": "#30D8C4",
+                  "line-class": "org.xmind.branchConnection.bight",
+                  "fo:font-weight": "500",
+                  "fo:font-family": "Montserrat",
+                  "fo:font-style": "normal",
+                  "fo:text-transform": "uppercase",
+                  "fo:font-size": "30pt",
+                  "line-width": "3pt",
+                  "border-line-width": "0"
+              },
+              "styleId": "566b3aea3f7b2e0a0cbb89ca83",
+              "type": "topic"
+          },
+          "boundary": {
+              "properties": {
+                  "line-color": "#FFFFFF",
+                  "svg:fill": "#FFFFFF",
+                  "fo:color": "#302934",
+                  "fo:font-family": "Montserrat",
+                  "fo:font-weight": "normal"
+              },
+              "styleId": "809a90d25f7974588bed59c06b",
+              "type": "boundary"
+          },
+          "floatingTopic": {
+              "properties": {
+                  "shape-class": "org.xmind.topicShape.ellipserect",
+                  "svg:fill": "#FFFFFF",
+                  "border-line-color": "#FFFFFF",
+                  "border-line-width": "2pt",
+                  "fo:font-family": "Montserrat",
+                  "fo:font-weight": "normal",
+                  "fo:font-size": "18pt",
+                  "fo:color": "#302934",
+                  "line-class": "org.xmind.branchConnection.bight",
+                  "line-color": "#30D8C4",
+                  "line-width": "3pt"
+              },
+              "styleId": "b9588c8bfc6ad4c872b9fa082f",
+              "type": "topic"
+          },
+          "subTopic": {
+              "properties": {
+                  "fo:font-weight": "normal",
+                  "fo:color": "#FFFFFF",
+                  "fo:font-family": "Montserrat",
+                  "fo:text-align": "left",
+                  "line-class": "org.xmind.branchConnection.bight"
+              },
+              "styleId": "3138d4845e2b6e60dfb0eb5dbb",
+              "type": "topic"
+          },
+          "mainTopic": {
+              "properties": {
+                  "fo:font-weight": "normal",
+                  "fo:color": "#FFFFFF",
+                  "fo:font-family": "Montserrat",
+                  "fo:font-size": "24pt",
+                  "shape-class": "org.xmind.topicShape.underline",
+                  "svg:fill": "none",
+                  "line-class": "org.xmind.branchConnection.bight",
+                  "line-width": "3pt"
+              },
+              "styleId": "ae3a94584179df1806911bd775",
+              "type": "topic"
+          },
+          "calloutTopic": {
+              "properties": {
+                  "svg:fill": "#FFFFFF",
+                  "border-line-width": "0",
+                  "fo:font-family": "Montserrat",
+                  "fo:font-weight": "400",
+                  "fo:color": "#302934",
+                  "fo:font-style": "normal"
+              },
+              "styleId": "cf597269c17beb4f39c6daae3f",
+              "type": "topic"
+          },
+          "summary": {
+              "properties": {
+                  "line-color": "#FFFFFF"
+              },
+              "styleId": "7129e73481eb7a1897b2c8094a",
+              "type": "summary"
+          },
+          "summaryTopic": {
+              "properties": {
+                  "svg:fill": "#FFFFFF",
+                  "border-line-color": "#FFFFFF",
+                  "fo:font-family": "Montserrat",
+                  "fo:font-weight": "400",
+                  "border-line-width": "1pt",
+                  "fo:color": "#302934",
+                  "fo:font-style": "normal",
+                  "fo:font-size": "18pt",
+                  "line-class": "org.xmind.branchConnection.bight",
+                  "line-width": "3pt"
+              },
+              "styleId": "28db31b676f948c81ce478dc31",
+              "type": "topic"
+          },
+          "relationship": {
+              "properties": {
+                  "line-width": "3pt",
+                  "line-pattern": "solid",
+                  "line-color": "#FFFFFF",
+                  "fo:color": "#FFFFFF",
+                  "fo:font-family": "Montserrat",
+                  "fo:font-weight": "normal"
+              },
+              "styleId": "ea0990886e2ba2b4b3c69ab34d",
+              "type": "relationship"
+          },
+          "map": {
+              "properties": {
+                  "line-tapered": "tapered",
+                  "svg:fill": "#302934"
+              },
+              "styleId": "6659012d15a89de3df86e84e92",
+              "type": "map"
+          },
+          "id": "9bebc324-ce04-4509-bcfc-f387d64672a5",
+          "title": "robust"
+      }
+  }
+]

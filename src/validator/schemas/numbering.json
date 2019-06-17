@@ -1,0 +1,20 @@
+{
+  "type": "object",
+  "properties": {
+      "numberFormat": {
+          "type": "string"
+      },
+      "prefix": {
+          "type": "string"
+      },
+      "suffix": {
+          "type": "string"
+      },
+      "prependingNumbers": {
+          "type": "string",
+          "enum": [
+              "none"
+          ]
+      }
+  }
+}

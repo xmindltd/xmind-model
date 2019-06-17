@@ -1,0 +1,47 @@
+{
+  "type": "object",
+  "properties": {
+      "plain": {
+          "type": "object",
+          "properties": {
+              "content": {
+                  "type": "string"
+              }
+          },
+          "required": [
+              "content"
+          ]
+      },
+      "html": {
+          "type": "object",
+          "properties": {
+              "content": {
+                  "type": "object",
+                  "properties": {
+                      "paragraphs": {
+                          "type": "array",
+                          "items": {
+                              "type": "object",
+                              "properties": {
+                                  "style": {
+                                      "$ref": "#/definitions/style"
+                                  },
+                                  "spans": {
+                                      "type": "array",
+                                      "items": {
+                                          "$ref": "#/definitions/noteSpan"
+                                      }
+                                  }
+                              }
+                          }
+                      }
+                  },
+                  "required": ["paragraphs"]
+              }
+          },
+          "required": [
+              "content"
+          ]
+      }
+  }
+}

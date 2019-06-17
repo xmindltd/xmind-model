@@ -1,0 +1,63 @@
+{
+  "type": "object",
+  "properties": {
+      "id": {
+          "type": "string"
+      },
+      "title": {
+          "type": "string"
+      },
+      "titleUnedited": {
+          "type": "boolean"
+      },
+      "style": {
+          "$ref": "#/definitions/style"
+      },
+      "class": {
+          "type": "string"
+      },
+      "end1Id": {
+          "type": "string"
+      },
+      "end2id": {
+          "type": "string"
+      },
+      "controlPoints": {
+          "type": "object",
+          "properties": {
+              "0": {
+                  "type": "object",
+                  "properties": {
+                      "angle": {
+                          "type": "number"
+                      },
+                      "amount": {
+                          "type": "number"
+                      }
+                  }
+              },
+              "1": {
+                  "type": "object",
+                  "properties": {
+                      "angle": {
+                          "type": "number"
+                      },
+                      "amount": {
+                          "type": "number"
+                      }
+                  }
+              }
+          },
+          "required": [
+              "0",
+              "1"
+          ]
+      }
+  },
+  "required": [
+      "id",
+      "end1Id",
+      "end2Id",
+      "controlPoints"
+  ]
+}

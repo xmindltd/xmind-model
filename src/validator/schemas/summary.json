@@ -1,0 +1,19 @@
+{
+  "type": "object",
+  "properties": {
+      "id": {
+          "type": "string"
+      },
+      "topicId": {
+          "type": "string"
+      },
+      "range": {
+          "type": "string"
+      }
+  },
+  "required": [
+      "id",
+      "range",
+      "topicId"
+  ]
+}

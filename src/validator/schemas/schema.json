@@ -1,0 +1,153 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "array",
+    "items": {
+        "$ref": "#/definitions/sheet"
+    },
+    "definitions": {
+        "textSpan": {
+            "type": "object",
+            "properties": {
+                "style": {
+                    "$ref": "#/definitions/style"
+                },
+                "text": {
+                    "type": "string"
+                },
+                "image": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "text"
+            ]
+        },
+        "imageSpan": {
+            "type": "object",
+            "properties": {
+                "style": {
+                    "$ref": "#/definitions/style"
+                },
+                "class": {
+                    "type": "string"
+                },
+                "image": {
+                    "type": "string"
+                }
+            }
+        },
+        "hyperlinkSpan": {
+            "type": "object",
+            "properties": {
+                "style": {
+                    "$ref": "#/definitions/style"
+                },
+                "class": {
+                    "type": "string"
+                },
+                "href": {
+                    "type": "string"
+                },
+                "spans": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/noteSpan"
+                    }
+                }
+            }
+        },
+        "noteSpan":{
+            "anyOf":[
+                {
+                    "$ref": "#/definitions/textSpan"
+                },
+                {
+                    "$ref": "#/definitions/textSpan"
+                },
+                {
+                    "$ref": "#/definitions/hyperlinkSpan"
+                }
+            ]
+        },
+        "position": {
+            "type": "object",
+            "properties": {
+                "x": {
+                    "type": "number"
+                },
+                "y": {
+                    "type": "number"
+                }
+            },
+            "required": [
+                "x",
+                "y"
+            ]
+        },
+        "style": {
+            "type": "object",
+            "properties": {
+                "id": {
+                    "type": "string"
+                },
+                "properties": {
+                    "type": "object",
+                    "additionalProperties": {
+                        "type":"string"
+                    }
+                }
+            },
+            "required": [
+                "properties"
+            ]
+        },
+        "legend": {
+            "type": "object",
+            "properties": {
+                "visibility": {
+                    "type": "string",
+                    "enum": [
+                        "hidden",
+                        "visible"
+                    ]
+                },
+                "position": {
+                    "$ref": "#/definitions/style"
+                },
+                "markers": {
+                    "type": "object",
+                    "additionalProperties": {
+                        "type":"object",
+                        "properties": {
+                            "name":{
+                                "type":"string"
+                            },
+                            "resource":{
+                                "type":"string"
+                            }
+                        }
+                    }
+                },
+                "groups": {
+                    "type": "object",
+                    "additionalProperties": {
+                        "type":"object",
+                        "properties": {
+                            "name":{
+                                "type":"string"
+                            },
+                            "markers":{
+                                "type":"array",
+                                "items": {
+                                    "type":"string"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "settings": {},
+        "extension": {}
+    }
+}
