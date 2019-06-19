@@ -5,13 +5,10 @@
   "main": "src/index.js",
   "types": "src/index.d.ts",
   "scripts": {
-    "test": "ts-node test/index.ts && mocha"
+    "build": "rm -rf dist && rm -rf types && ./node_modules/.bin/tsc",
+    "test": "./node_modules/.bin/mocha"
   },
-  "dependencies": {
-    "ajv": "^6.10.0",
-    "backbone": "^1.4.0",
-    "underscore": "^1.9.1"
-  },
+  "dependencies": {},
   "repository": {
     "type": "git",
     "url": "https://github.com/xmindltd/xmind-model.git"
@@ -28,7 +25,13 @@
   "author": "daniels",
   "license": "MIT",
   "devDependencies": {
+    "@types/events": "^3.0.0",
+    "@types/ajv": "^1.0.0",
+    "@types/node": "^12.0.8",
+    "ajv": "^6.10.0",
     "chai": "^4.2.0",
-    "mocha": "^6.1.4"
+    "events": "^3.0.0",
+    "mocha": "^6.1.4",
+    "typescript": "^3.5.2"
   }
 }
