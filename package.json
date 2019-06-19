@@ -2,8 +2,8 @@
   "name": "xmind-model",
   "version": "1.1.2",
   "description": "The core model of snowbrush",
-  "main": "src/index.js",
-  "types": "src/index.d.ts",
+  "main": "dist/index.js",
+  "types": "types/index.d.ts",
   "scripts": {
     "build": "rm -rf dist && rm -rf types && ./node_modules/.bin/tsc",
     "test": "./node_modules/.bin/mocha"

@@ -1,6 +1,6 @@
 import StyleComponent from './style-component'
 import { COMPONENT_TYPE, TOPIC_TYPE, EXTENSION_PROVIDER } from '../common/constants'
-import { isEqualPoint, isPointLike, Point, isUndefined, isNull, isEmpty } from '../common/utils'
+import { isEqualPoint, isPointLike, Point, isUndefined, isNull, isEmpty, deepClone } from '../common/utils'
 import Boundary, { BoundaryData } from './boundary'
 import Summary, { SummaryData } from './summary'
 import Marker, { MarkerData } from './marker'
@@ -47,9 +47,10 @@ interface TopicModelInitOptions {
   index?: number
 }
 
-const defaultInitOptions: TopicModelInitOptions = {
-  type: TOPIC_TYPE.ATTACHED
-}
+const defaultInitOptions: TopicModelInitOptions = Object.freeze({
+  type: TOPIC_TYPE.ATTACHED,
+  index: -1
+})
 
 const CHILDREN_DATA_KEY = 'children'
 const BOUNDARIES_DATA_KEY = 'boundaries'
@@ -143,7 +144,7 @@ export default class Topic extends StyleComponent<TopicData> {
 
   _extensionMap: { [index: string]: Extension } = {}
 
-  constructor(data: TopicData, options: TopicModelInitOptions = defaultInitOptions) {
+  constructor(data: TopicData, options: TopicModelInitOptions = deepClone(defaultInitOptions)) {
     super(data, options)
 
     this._topicType = options.type || TOPIC_TYPE.ATTACHED
@@ -277,7 +278,7 @@ export default class Topic extends StyleComponent<TopicData> {
 
   addChildTopic(childTopicData: TopicData, options: TopicModelInitOptions = defaultInitOptions): Topic {
     // todo: before add topic 事件：触发与参数设计
-    const newTopicModel = this._addChildTopic(childTopicData, options)
+    const newTopicModel = this._addChildTopic(childTopicData, Object.assign({}, options))
 
     // 对data数据做前置校验
     if (!this._data.commit('get', CHILDREN_DATA_KEY)) {
@@ -305,7 +306,7 @@ export default class Topic extends StyleComponent<TopicData> {
     return newTopicModel
   }
 
-  _addChildTopic(childTopicData: TopicData, options: TopicModelInitOptions = defaultInitOptions) {
+  _addChildTopic(childTopicData: TopicData, options: TopicModelInitOptions) {
     const newTopicModel = this.ownerSheet().createComponent(COMPONENT_TYPE.TOPIC, childTopicData, options) as Topic
 
     // set index value

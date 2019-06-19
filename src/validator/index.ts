@@ -26,7 +26,7 @@ function getValidator() {
 
 export default function(data) {
   const validate = getValidator()
-  const status = validate(data || {})
+  const status = validate(data || {}) as boolean
   if (validate.errors) {
     return {status, errors: validate.errors}
   }
