@@ -1,7 +1,7 @@
 'use strict';
 
 const {expect} = require('chai');
-const validator = require('../../src/validator');
+const validator = require('../../dist/validator').default;
 const data = require('../fixtures/correct.data.json');
 
 const missingMarkerId = require('../fixtures/error.marker.json');
