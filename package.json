@@ -16,7 +16,8 @@
   "files": [
     "dist",
     "types",
-    "schemas"
+    "schemas",
+    "src"
   ],
   "keywords": [
     "xmind-model",
