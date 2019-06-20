@@ -13,17 +13,13 @@
     "type": "git",
     "url": "https://github.com/xmindltd/xmind-model.git"
   },
-  "files": [
-    "src"
-  ],
+  "files": [ "dist", "types" ],
   "keywords": [
     "xmind-model",
     "xmindmodel",
     "model",
     "xmind-core"
   ],
-  "author": "daniels",
-  "license": "MIT",
   "devDependencies": {
     "@types/events": "^3.0.0",
     "@types/ajv": "^1.0.0",
@@ -33,5 +29,7 @@
     "events": "^3.0.0",
     "mocha": "^6.1.4",
     "typescript": "^3.5.2"
-  }
+  },
+  "author": "daniels",
+  "license": "MIT"
 }
