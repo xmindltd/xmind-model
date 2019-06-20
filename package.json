@@ -13,7 +13,10 @@
     "type": "git",
     "url": "https://github.com/xmindltd/xmind-model.git"
   },
-  "files": [ "dist", "types" ],
+  "files": [
+    "dist",
+    "types"
+  ],
   "keywords": [
     "xmind-model",
     "xmindmodel",
