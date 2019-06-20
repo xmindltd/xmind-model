@@ -1,5 +1,6 @@
 # Created by .ignore support plugin (hsz.mobi)
 dist
+types
 
 # Mac os
 .DS_Store
