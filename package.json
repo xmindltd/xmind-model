@@ -1,6 +1,6 @@
 {
   "name": "xmind-model",
-  "version": "1.1.6",
+  "version": "1.1.7",
   "description": "The core model of snowbrush",
   "main": "dist/index.js",
   "types": "types/index.d.ts",
@@ -8,7 +8,9 @@
     "build": "rm -rf dist && rm -rf types && ./node_modules/.bin/tsc",
     "test": "./node_modules/.bin/mocha"
   },
-  "dependencies": {},
+  "dependencies": {
+    "ajv": "^6.10.0"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/xmindltd/xmind-model.git"
@@ -29,7 +31,6 @@
     "@types/events": "^3.0.0",
     "@types/ajv": "^1.0.0",
     "@types/node": "^12.0.8",
-    "ajv": "^6.10.0",
     "chai": "^4.2.0",
     "events": "^3.0.0",
     "mocha": "^6.1.4",

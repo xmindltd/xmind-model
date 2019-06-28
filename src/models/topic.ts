@@ -324,11 +324,16 @@ export default class Topic extends StyleComponent<TopicData> {
     return newTopicModel
   }
 
+  getChildIndexByType(topicType: string, topic: Topic): number {
+    const children = this.getChildrenByType(topicType)
+    const targetTopicId = topic.getId()
+    return children.map(subTopic => subTopic.getId()).indexOf(targetTopicId)
+  }
+
   removeChildTopic(childTopic: Topic) {
     const childTopicType = childTopic.getType()
 
-    const childrenList = this.getChildrenByType(childTopicType)
-    const index = childrenList.indexOf(childTopic)
+    const index = this.getChildIndexByType(childTopicType, childTopic)
 
     if (index === -1) throw new Error('target is not child of this topic')
 
