@@ -11,9 +11,15 @@
   "dependencies": {
     "ajv": "^6.10.0"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/xmindltd/xmind-model.git"
+  "devDependencies": {
+    "@types/ajv": "^1.0.0",
+    "@types/events": "^3.0.0",
+    "@types/node": "^12.0.8",
+    "chai": "^4.2.0",
+    "events": "^3.0.0",
+    "mocha": "^6.1.4",
+    "tslint": "^5.18.0",
+    "typescript": "^3.5.3"
   },
   "files": [
     "dist",
@@ -27,14 +33,9 @@
     "model",
     "xmind-core"
   ],
-  "devDependencies": {
-    "@types/events": "^3.0.0",
-    "@types/ajv": "^1.0.0",
-    "@types/node": "^12.0.8",
-    "chai": "^4.2.0",
-    "events": "^3.0.0",
-    "mocha": "^6.1.4",
-    "typescript": "^3.5.2"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xmindltd/xmind-model.git"
   },
   "author": "daniels",
   "license": "MIT"

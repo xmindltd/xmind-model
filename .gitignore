@@ -83,3 +83,5 @@ typings/
 .idea/modules.xml
 .idea/workspace.xml
 .idea/xmind-sdk.iml
+
+coverage/*

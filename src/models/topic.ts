@@ -259,6 +259,10 @@ export default class Topic extends StyleComponent<TopicData> {
     return this._topicType
   }
 
+  getChildren(): TopicData {
+    return this._initData;
+  }
+
   getChildrenByType(typeList: string | Array<string>): Array<Topic> {
     if (typeof typeList === 'string') {
       typeList = [typeList]
