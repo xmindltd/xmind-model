@@ -48,8 +48,7 @@ interface TopicModelInitOptions {
 }
 
 const defaultInitOptions: TopicModelInitOptions = Object.freeze({
-  type: TOPIC_TYPE.ATTACHED,
-  index: -1
+  type: TOPIC_TYPE.ATTACHED
 })
 
 const CHILDREN_DATA_KEY = 'children'
@@ -282,7 +281,8 @@ export default class Topic extends StyleComponent<TopicData> {
 
   addChildTopic(childTopicData: TopicData, options: TopicModelInitOptions = defaultInitOptions): Topic {
     // todo: before add topic 事件：触发与参数设计
-    const newTopicModel = this._addChildTopic(childTopicData, Object.assign({}, options))
+    const opts = Object.assign({}, options);
+    const newTopicModel = this._addChildTopic(childTopicData, opts)
 
     // 对data数据做前置校验
     if (!this._data.commit('get', CHILDREN_DATA_KEY)) {
@@ -291,12 +291,16 @@ export default class Topic extends StyleComponent<TopicData> {
 
     const childrenData = this._data.commit('get', CHILDREN_DATA_KEY)
 
-    if (!childrenData[options.type]) {
-      childrenData[options.type] = []
+    if (!childrenData[opts.type]) {
+      childrenData[opts.type] = []
+    }
+
+    if (isUndefined(opts.index) || isNull(opts.index) || opts.index < 0) {
+      opts.index = this.getChildrenByType(opts.type).length
     }
 
     // update data
-    childrenData[options.type].splice(options.index, 0, childTopicData)
+    childrenData[opts.type].splice(opts.index, 0, childTopicData)
 
     // todo: add topic 事件：参数设计
     this.emit(this.modelEvents.addTopic)
@@ -304,7 +308,7 @@ export default class Topic extends StyleComponent<TopicData> {
     // todo undo and redo
     this.getUndo().add({
       undo: () => this.removeChildTopic(newTopicModel),
-      redo: () => this.addChildTopic(childTopicData, options)
+      redo: () => this.addChildTopic(childTopicData, opts)
     })
 
     return newTopicModel
