@@ -1,6 +1,6 @@
 {
   "name": "xmind-model",
-  "version": "1.1.11",
+  "version": "1.1.12",
   "description": "The core model of snowbrush",
   "main": "dist/index.js",
   "types": "types/index.d.ts",
